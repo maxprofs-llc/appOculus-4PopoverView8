@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B664FD71E2C830D00A2D5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FD61E2C830D00A2D5C5 /* AppDelegate.swift */; };
+		3B664FD91E2C830D00A2D5C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FD81E2C830D00A2D5C5 /* ViewController.swift */; };
+		3B664FDC1E2C830D00A2D5C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B664FDA1E2C830D00A2D5C5 /* Main.storyboard */; };
+		3B664FDE1E2C830D00A2D5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */; };
+		3B664FE11E2C830D00A2D5C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B664FDF1E2C830D00A2D5C5 /* LaunchScreen.storyboard */; };
+		3B664FEC1E2C830D00A2D5C5 /* appOculusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FEB1E2C830D00A2D5C5 /* appOculusTests.swift */; };
+		3B664FF71E2C830D00A2D5C5 /* appOculusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FF61E2C830D00A2D5C5 /* appOculusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B664FE81E2C830D00A2D5C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B664FCB1E2C830C00A2D5C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B664FD21E2C830C00A2D5C5;
+			remoteInfo = appOculus;
+		};
+		3B664FF31E2C830D00A2D5C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B664FCB1E2C830C00A2D5C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B664FD21E2C830C00A2D5C5;
+			remoteInfo = appOculus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B664FD31E2C830C00A2D5C5 /* appOculus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appOculus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B664FD61E2C830D00A2D5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B664FD81E2C830D00A2D5C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B664FDB1E2C830D00A2D5C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B664FE01E2C830D00A2D5C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B664FE21E2C830D00A2D5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B664FE71E2C830D00A2D5C5 /* appOculusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appOculusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B664FEB1E2C830D00A2D5C5 /* appOculusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appOculusTests.swift; sourceTree = "<group>"; };
+		3B664FED1E2C830D00A2D5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B664FF21E2C830D00A2D5C5 /* appOculusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appOculusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B664FF61E2C830D00A2D5C5 /* appOculusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appOculusUITests.swift; sourceTree = "<group>"; };
+		3B664FF81E2C830D00A2D5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B664FD01E2C830C00A2D5C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B664FE41E2C830D00A2D5C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B664FEF1E2C830D00A2D5C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B664FCA1E2C830C00A2D5C5 = {
+			isa = PBXGroup;
+			children = (
+				3B664FD51E2C830D00A2D5C5 /* appOculus */,
+				3B664FEA1E2C830D00A2D5C5 /* appOculusTests */,
+				3B664FF51E2C830D00A2D5C5 /* appOculusUITests */,
+				3B664FD41E2C830C00A2D5C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B664FD41E2C830C00A2D5C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B664FD31E2C830C00A2D5C5 /* appOculus.app */,
+				3B664FE71E2C830D00A2D5C5 /* appOculusTests.xctest */,
+				3B664FF21E2C830D00A2D5C5 /* appOculusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B664FD51E2C830D00A2D5C5 /* appOculus */ = {
+			isa = PBXGroup;
+			children = (
+				3B664FD61E2C830D00A2D5C5 /* AppDelegate.swift */,
+				3B664FD81E2C830D00A2D5C5 /* ViewController.swift */,
+				3B664FDA1E2C830D00A2D5C5 /* Main.storyboard */,
+				3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */,
+				3B664FDF1E2C830D00A2D5C5 /* LaunchScreen.storyboard */,
+				3B664FE21E2C830D00A2D5C5 /* Info.plist */,
+			);
+			path = appOculus;
+			sourceTree = "<group>";
+		};
+		3B664FEA1E2C830D00A2D5C5 /* appOculusTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B664FEB1E2C830D00A2D5C5 /* appOculusTests.swift */,
+				3B664FED1E2C830D00A2D5C5 /* Info.plist */,
+			);
+			path = appOculusTests;
+			sourceTree = "<group>";
+		};
+		3B664FF51E2C830D00A2D5C5 /* appOculusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B664FF61E2C830D00A2D5C5 /* appOculusUITests.swift */,
+				3B664FF81E2C830D00A2D5C5 /* Info.plist */,
+			);
+			path = appOculusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B664FD21E2C830C00A2D5C5 /* appOculus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B664FFB1E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculus" */;
+			buildPhases = (
+				3B664FCF1E2C830C00A2D5C5 /* Sources */,
+				3B664FD01E2C830C00A2D5C5 /* Frameworks */,
+				3B664FD11E2C830C00A2D5C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = appOculus;
+			productName = appOculus;
+			productReference = 3B664FD31E2C830C00A2D5C5 /* appOculus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B664FE61E2C830D00A2D5C5 /* appOculusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B664FFE1E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculusTests" */;
+			buildPhases = (
+				3B664FE31E2C830D00A2D5C5 /* Sources */,
+				3B664FE41E2C830D00A2D5C5 /* Frameworks */,
+				3B664FE51E2C830D00A2D5C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B664FE91E2C830D00A2D5C5 /* PBXTargetDependency */,
+			);
+			name = appOculusTests;
+			productName = appOculusTests;
+			productReference = 3B664FE71E2C830D00A2D5C5 /* appOculusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B664FF11E2C830D00A2D5C5 /* appOculusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6650011E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculusUITests" */;
+			buildPhases = (
+				3B664FEE1E2C830D00A2D5C5 /* Sources */,
+				3B664FEF1E2C830D00A2D5C5 /* Frameworks */,
+				3B664FF01E2C830D00A2D5C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B664FF41E2C830D00A2D5C5 /* PBXTargetDependency */,
+			);
+			name = appOculusUITests;
+			productName = appOculusUITests;
+			productReference = 3B664FF21E2C830D00A2D5C5 /* appOculusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B664FCB1E2C830C00A2D5C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Javier Cortes";
+				TargetAttributes = {
+					3B664FD21E2C830C00A2D5C5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					3B664FE61E2C830D00A2D5C5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B664FD21E2C830C00A2D5C5;
+					};
+					3B664FF11E2C830D00A2D5C5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B664FD21E2C830C00A2D5C5;
+					};
+				};
+			};
+			buildConfigurationList = 3B664FCE1E2C830C00A2D5C5 /* Build configuration list for PBXProject "appOculus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B664FCA1E2C830C00A2D5C5;
+			productRefGroup = 3B664FD41E2C830C00A2D5C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B664FD21E2C830C00A2D5C5 /* appOculus */,
+				3B664FE61E2C830D00A2D5C5 /* appOculusTests */,
+				3B664FF11E2C830D00A2D5C5 /* appOculusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B664FD11E2C830C00A2D5C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B664FE11E2C830D00A2D5C5 /* LaunchScreen.storyboard in Resources */,
+				3B664FDE1E2C830D00A2D5C5 /* Assets.xcassets in Resources */,
+				3B664FDC1E2C830D00A2D5C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B664FE51E2C830D00A2D5C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B664FF01E2C830D00A2D5C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B664FCF1E2C830C00A2D5C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B664FD91E2C830D00A2D5C5 /* ViewController.swift in Sources */,
+				3B664FD71E2C830D00A2D5C5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B664FE31E2C830D00A2D5C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B664FEC1E2C830D00A2D5C5 /* appOculusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B664FEE1E2C830D00A2D5C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B664FF71E2C830D00A2D5C5 /* appOculusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B664FE91E2C830D00A2D5C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B664FD21E2C830C00A2D5C5 /* appOculus */;
+			targetProxy = 3B664FE81E2C830D00A2D5C5 /* PBXContainerItemProxy */;
+		};
+		3B664FF41E2C830D00A2D5C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B664FD21E2C830C00A2D5C5 /* appOculus */;
+			targetProxy = 3B664FF31E2C830D00A2D5C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B664FDA1E2C830D00A2D5C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B664FDB1E2C830D00A2D5C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B664FDF1E2C830D00A2D5C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B664FE01E2C830D00A2D5C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B664FF91E2C830D00A2D5C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B664FFA1E2C830D00A2D5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B664FFC1E2C830D00A2D5C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = appOculus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3B664FFD1E2C830D00A2D5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = appOculus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3B664FFF1E2C830D00A2D5C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = appOculusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appOculus.app/appOculus";
+			};
+			name = Debug;
+		};
+		3B6650001E2C830D00A2D5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = appOculusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/appOculus.app/appOculus";
+			};
+			name = Release;
+		};
+		3B6650021E2C830D00A2D5C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = appOculusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = appOculus;
+			};
+			name = Debug;
+		};
+		3B6650031E2C830D00A2D5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = appOculusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = appOculus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B664FCE1E2C830C00A2D5C5 /* Build configuration list for PBXProject "appOculus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B664FF91E2C830D00A2D5C5 /* Debug */,
+				3B664FFA1E2C830D00A2D5C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B664FFB1E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B664FFC1E2C830D00A2D5C5 /* Debug */,
+				3B664FFD1E2C830D00A2D5C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B664FFE1E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B664FFF1E2C830D00A2D5C5 /* Debug */,
+				3B6650001E2C830D00A2D5C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3B6650011E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6650021E2C830D00A2D5C5 /* Debug */,
+				3B6650031E2C830D00A2D5C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B664FCB1E2C830C00A2D5C5 /* Project object */;
+}
