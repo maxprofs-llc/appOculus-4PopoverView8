@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         if launchedBefore  {
-             print("Not first launch. GitLab Commit")
+             print("Not first launch. ENTREGA Final")
         } else {
             print("First launch, setting UserDefault. ISAI")
             UserDefaults.standard.set(true, forKey: "launchedBefore")
