@@ -37,6 +37,15 @@
 		637743C51E64081C00DF8EF9 /* solid-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 637743C41E64081C00DF8EF9 /* solid-left.png */; };
 		637743C71E6408C700DF8EF9 /* solid-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 637743C61E6408C700DF8EF9 /* solid-right.png */; };
 		637EAAAC1E6DA389008041B8 /* CPLC_PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637EAAAB1E6DA389008041B8 /* CPLC_PrintViewController.m */; };
+		637EAAB21E70E94C008041B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAAB11E70E94C008041B8 /* ViewController.swift */; };
+		637EAAB51E70E979008041B8 /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAAB31E70E979008041B8 /* ApiHelper.swift */; };
+		637EAAB61E70E979008041B8 /* ExtToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAAB41E70E979008041B8 /* ExtToolBar.swift */; };
+		637EAAB81E70E989008041B8 /* ExtString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAAB71E70E989008041B8 /* ExtString.swift */; };
+		637EAABD1E70EBBD008041B8 /* cellPregunta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAABA1E70EBBD008041B8 /* cellPregunta.swift */; };
+		637EAABE1E70EBBD008041B8 /* cellPregunta.xib in Resources */ = {isa = PBXBuildFile; fileRef = 637EAABB1E70EBBD008041B8 /* cellPregunta.xib */; };
+		637EAABF1E70EBBD008041B8 /* PreguntasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637EAABC1E70EBBD008041B8 /* PreguntasVC.swift */; };
+		637EAAC11E70EC6F008041B8 /* Lupa-Azul.png in Resources */ = {isa = PBXBuildFile; fileRef = 637EAAC01E70EC6F008041B8 /* Lupa-Azul.png */; };
+		637EAAC31E70EC8C008041B8 /* Ayuda.png in Resources */ = {isa = PBXBuildFile; fileRef = 637EAAC21E70EC8C008041B8 /* Ayuda.png */; };
 		E9572F661E4026C500493B55 /* ESCPOS_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9572F651E4026C500493B55 /* ESCPOS_ViewController.m */; };
 		E9572F6A1E40276B00493B55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9572F671E40276B00493B55 /* Default-568h@2x.png */; };
 		E9572F6C1E40276B00493B55 /* logozapopan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9572F691E40276B00493B55 /* logozapopan.jpg */; };
@@ -107,6 +116,15 @@
 		637743C61E6408C700DF8EF9 /* solid-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solid-right.png"; sourceTree = "<group>"; };
 		637EAAAA1E6DA389008041B8 /* CPLC_PrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLC_PrintViewController.h; sourceTree = "<group>"; };
 		637EAAAB1E6DA389008041B8 /* CPLC_PrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLC_PrintViewController.m; sourceTree = "<group>"; };
+		637EAAB11E70E94C008041B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		637EAAB31E70E979008041B8 /* ApiHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
+		637EAAB41E70E979008041B8 /* ExtToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtToolBar.swift; sourceTree = "<group>"; };
+		637EAAB71E70E989008041B8 /* ExtString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtString.swift; sourceTree = "<group>"; };
+		637EAABA1E70EBBD008041B8 /* cellPregunta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cellPregunta.swift; sourceTree = "<group>"; };
+		637EAABB1E70EBBD008041B8 /* cellPregunta.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellPregunta.xib; sourceTree = "<group>"; };
+		637EAABC1E70EBBD008041B8 /* PreguntasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreguntasVC.swift; sourceTree = "<group>"; };
+		637EAAC01E70EC6F008041B8 /* Lupa-Azul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lupa-Azul.png"; sourceTree = "<group>"; };
+		637EAAC21E70EC8C008041B8 /* Ayuda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ayuda.png; sourceTree = "<group>"; };
 		E9572F641E4026C500493B55 /* ESCPOS_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESCPOS_ViewController.h; path = ../ESCPOS_ViewController.h; sourceTree = "<group>"; };
 		E9572F651E4026C500493B55 /* ESCPOS_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESCPOS_ViewController.m; path = ../ESCPOS_ViewController.m; sourceTree = "<group>"; };
 		E9572F671E40276B00493B55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -161,6 +179,8 @@
 				308E0D281E63AE9800DE0F6E /* icon.png */,
 				E9572F691E40276B00493B55 /* logozapopan.jpg */,
 				637743BE1E63D44D00DF8EF9 /* imagenVacia.png */,
+				637EAAC01E70EC6F008041B8 /* Lupa-Azul.png */,
+				637EAAC21E70EC8C008041B8 /* Ayuda.png */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -180,6 +200,7 @@
 			children = (
 				439CC7B71E4CD91D00AB42F2 /* DB */,
 				439CC7C61E4CED0300AB42F2 /* businessLogic */,
+				637EAAB91E70EBA5008041B8 /* Preguntas */,
 				439CC7B91E4CD96F00AB42F2 /* utilities */,
 				306F71101E2D53A200A60A97 /* images */,
 				3B664FD51E2C830D00A2D5C5 /* appOculus */,
@@ -209,8 +230,11 @@
 				3B664FE21E2C830D00A2D5C5 /* Info.plist */,
 				439CC7B81E4CD93D00AB42F2 /* ViewControllers */,
 				3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */,
+				637EAAB31E70E979008041B8 /* ApiHelper.swift */,
+				637EAAB41E70E979008041B8 /* ExtToolBar.swift */,
 				3B6650041E2C869C00A2D5C5 /* ExtGetJson.swift */,
 				3B6650061E2C86C700A2D5C5 /* ExtShowAlert.swift */,
+				637EAAB71E70E989008041B8 /* ExtString.swift */,
 				305E9AE31E3C35B4002C0695 /* appOculus-Bridging-Header.h */,
 			);
 			path = appOculus;
@@ -249,6 +273,7 @@
 				3B098DDF1E2DB5AD00E4880A /* MenuViewController.swift */,
 				3086B6AB1E2DC7F8003E0978 /* MultaViewController.swift */,
 				430FEB7A1E60F96C0068896D /* TablaViewController.swift */,
+				637EAAB11E70E94C008041B8 /* ViewController.swift */,
 				6359C4D51E43BE0D0082EEE0 /* TomarFotoViewController.h */,
 				6359C4D61E43BE0D0082EEE0 /* TomarFotoViewController.m */,
 				E9572F641E4026C500493B55 /* ESCPOS_ViewController.h */,
@@ -282,6 +307,16 @@
 				4333A3801E5D04C600186F35 /* CustomObject.m */,
 			);
 			name = businessLogic;
+			sourceTree = "<group>";
+		};
+		637EAAB91E70EBA5008041B8 /* Preguntas */ = {
+			isa = PBXGroup;
+			children = (
+				637EAABA1E70EBBD008041B8 /* cellPregunta.swift */,
+				637EAABB1E70EBBD008041B8 /* cellPregunta.xib */,
+				637EAABC1E70EBBD008041B8 /* PreguntasVC.swift */,
+			);
+			name = Preguntas;
 			sourceTree = "<group>";
 		};
 		E9572F631E4026B000493B55 /* PrintDeviceOculus */ = {
@@ -437,10 +472,13 @@
 				637743C51E64081C00DF8EF9 /* solid-left.png in Resources */,
 				637743BF1E63D44D00DF8EF9 /* imagenVacia.png in Resources */,
 				E9572F6C1E40276B00493B55 /* logozapopan.jpg in Resources */,
+				637EAAC31E70EC8C008041B8 /* Ayuda.png in Resources */,
+				637EAABE1E70EBBD008041B8 /* cellPregunta.xib in Resources */,
 				3B664FE11E2C830D00A2D5C5 /* LaunchScreen.storyboard in Resources */,
 				3B664FDE1E2C830D00A2D5C5 /* Assets.xcassets in Resources */,
 				308E0D291E63AE9800DE0F6E /* icon.png in Resources */,
 				308E0D2B1E63AEA800DE0F6E /* logo_zapopan_bn.jpg in Resources */,
+				637EAAC11E70EC6F008041B8 /* Lupa-Azul.png in Resources */,
 				3075F6091E64A1760002789D /* logo_zapopan_contorno.jpg in Resources */,
 				E9572F6A1E40276B00493B55 /* Default-568h@2x.png in Resources */,
 				3B664FDC1E2C830D00A2D5C5 /* Main.storyboard in Resources */,
@@ -469,17 +507,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637EAABF1E70EBBD008041B8 /* PreguntasVC.swift in Sources */,
 				3B098DE01E2DB5AD00E4880A /* MenuViewController.swift in Sources */,
 				E9572F661E4026C500493B55 /* ESCPOS_ViewController.m in Sources */,
+				637EAAB81E70E989008041B8 /* ExtString.swift in Sources */,
 				637EAAAC1E6DA389008041B8 /* CPLC_PrintViewController.m in Sources */,
 				439CC7BC1E4CD99100AB42F2 /* Reachability.m in Sources */,
+				637EAAB61E70E979008041B8 /* ExtToolBar.swift in Sources */,
 				3B664FD91E2C830D00A2D5C5 /* LoginViewController.swift in Sources */,
 				6359C4D71E43BE0D0082EEE0 /* TomarFotoViewController.m in Sources */,
 				4333A3811E5D04C600186F35 /* CustomObject.m in Sources */,
 				439CC7BF1E4CDD2A00AB42F2 /* GlobalMembers.m in Sources */,
 				3086B6AC1E2DC7F8003E0978 /* MultaViewController.swift in Sources */,
+				637EAAB21E70E94C008041B8 /* ViewController.swift in Sources */,
 				433001AD1E429DDF006F21D3 /* Model.xcdatamodeld in Sources */,
 				3B664FD71E2C830D00A2D5C5 /* AppDelegate.swift in Sources */,
+				637EAAB51E70E979008041B8 /* ApiHelper.swift in Sources */,
+				637EAABD1E70EBBD008041B8 /* cellPregunta.swift in Sources */,
 				3B6650051E2C869C00A2D5C5 /* ExtGetJson.swift in Sources */,
 				3B6650071E2C86C700A2D5C5 /* ExtShowAlert.swift in Sources */,
 				439CC7C21E4CEC3700AB42F2 /* InternetServices.m in Sources */,
