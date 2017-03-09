@@ -133,11 +133,6 @@
     
 }
 
-
-
-
-
-
 + (void)isInternetAvailable{
     Reachability *reachability = [Reachability reachabilityForInternetConnection];
     //reachability = [Reachability reachabilityForInternetConnection];

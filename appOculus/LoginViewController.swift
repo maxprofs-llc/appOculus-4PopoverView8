@@ -57,11 +57,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate, CLLocationMana
         
         idtelefono = UIDevice.current.name.description
         
-
-        
-
-        // Do any additional setup after loading the view, typically from a nib.
-        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.NetMessage),

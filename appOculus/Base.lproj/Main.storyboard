@@ -155,7 +155,7 @@
                                     <constraint firstAttribute="width" constant="200" id="wCt-E4-ayH"/>
                                     <constraint firstAttribute="height" constant="50" id="wGY-oM-CnU"/>
                                 </constraints>
-                                <state key="normal" title="Modolu 4">
+                                <state key="normal" title="Modulo 4">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -198,11 +198,11 @@
                         <viewControllerLayoutGuide type="bottom" id="76k-VS-lIc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XOt-oE-OL1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="920"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo vertical full hd.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rv3-hH-vuN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="920"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="950"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logozapopan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Kc-nx-GJ5">
                                 <rect key="frame" x="267" y="30" width="98" height="62"/>
@@ -212,7 +212,7 @@
                                 </constraints>
                             </imageView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJR-wC-efT">
-                                <rect key="frame" x="0.0" y="20" width="375" height="910"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="940"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEi-DU-eZc">
@@ -230,7 +230,7 @@
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI8-FH-0P9">
-                                <rect key="frame" x="0.0" y="124" width="375" height="796"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="826"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPS-wg-knV">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="820"/>
@@ -494,7 +494,7 @@
                                                     <constraint firstAttribute="width" constant="80" id="9sk-Dx-jMO"/>
                                                     <constraint firstAttribute="height" constant="30" id="kD2-Am-NGD"/>
                                                 </constraints>
-                                                <state key="normal" title="Enviar">
+                                                <state key="normal" title="Guardar">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -713,7 +713,7 @@
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="920"/>
+                    <size key="freeformSize" width="375" height="950"/>
                     <connections>
                         <outlet property="ObtenerUbic" destination="Non-yP-bB8" id="Nsn-Bv-VR9"/>
                         <outlet property="btnEnviar" destination="eLt-56-Db5" id="mKD-jL-85S"/>
@@ -741,7 +741,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72u-Jg-tot" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.8" y="1047.0764617691154"/>
+            <point key="canvasLocation" x="1463" y="1213"/>
         </scene>
         <!--Tabla View Controller-->
         <scene sceneID="rH5-dD-Vfy">
@@ -1100,7 +1100,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="imprimirMulta:" destination="ISA-bK-1gI" eventType="touchUpInside" id="vzD-a6-16l"/>
+                                    <action selector="imprimirMultaCPLC:" destination="ISA-bK-1gI" eventType="touchUpInside" id="xaY-qb-XXY"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logozapopan.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bAm-bu-trH">
@@ -1288,7 +1288,7 @@
         <scene sceneID="zqn-mb-kfI">
             <objects>
                 <navigationController id="drx-4d-YaJ" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4On-h2-4hH">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4On-h2-4hH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1392,6 +1392,6 @@
         <image name="solid-right.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vnR-lG-ezS"/>
+        <segue reference="zXF-oR-5AW"/>
     </inferredMetricsTieBreakers>
 </document>

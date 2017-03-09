@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         netValidator = InternetServices.init()
+        GisInternetAvaliable = true
         
 //        let reach = Reachability()
 //        let conectionBool = reach.connectionRequired()

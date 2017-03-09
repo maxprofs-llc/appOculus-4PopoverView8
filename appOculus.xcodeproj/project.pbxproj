@@ -199,9 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				439CC7B71E4CD91D00AB42F2 /* DB */,
+				439CC7B91E4CD96F00AB42F2 /* utilities */,
 				439CC7C61E4CED0300AB42F2 /* businessLogic */,
 				637EAAB91E70EBA5008041B8 /* Preguntas */,
-				439CC7B91E4CD96F00AB42F2 /* utilities */,
 				306F71101E2D53A200A60A97 /* images */,
 				3B664FD51E2C830D00A2D5C5 /* appOculus */,
 				3B664FEA1E2C830D00A2D5C5 /* appOculusTests */,

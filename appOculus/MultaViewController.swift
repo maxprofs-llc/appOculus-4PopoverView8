@@ -184,8 +184,22 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
 
     }
     
+    func isInternetAvalible()-> Bool
+    {
+        let reachability = Reachability.self .forInternetConnection()
+        let internetStatus = reachability?.currentReachabilityStatus()
+        if internetStatus != NotReachable {
+            GisInternetAvaliable = true
+            return true
+        }
+        GisInternetAvaliable = false
+        return false
+    }
+    
     override func viewDidAppear(_ animated: Bool)
     {
+        self.isInternetAvalible()
+        
         //Para mover el scrollview a la primera foto
         let offset = CGPoint(x: scrollViewFotos.bounds.size.width * 0, y: 0)
         scrollViewFotos.setContentOffset(offset, animated: true)
@@ -569,9 +583,10 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         //Se tendria que validar que los datos esten correctos.
         
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
-        
-
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
         
         if txtPlaca.text == "" {
             "Favor de capturar la Placa del Auto".showAlert(self)
@@ -647,7 +662,11 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
 //        clearTempFolder()
         
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
+
 
         self.btnEnviar.isEnabled = true
         self.btnEnviar.alpha = 1.0;
@@ -864,15 +883,21 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         //Se tendria que validar que los datos esten correctos.
         
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
-        
-        
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
+
         if txtPlaca.text == "" {
             "Favor de capturar la Placa del vehiculo".showAlert(self)
             return
         }
-        if txtMarca.text == "" || txtColor.text == "" {
+        if txtMarca.text == "" {
             "Favor de capturar marca del vehiculo".showAlert(self)
+            return
+        }
+        if txtColor.text == "" {
+            "Favor de capturar el color del vehiculo".showAlert(self)
             return
         }
         if txtClave.text == "" {
@@ -1016,11 +1041,55 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         }
     }
 
+    func updateMulta(mul_Folio: String) {
+        
+        //1
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        
+        //2
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "MUL_Multas")
+        fetchRequest.predicate = NSPredicate(format: "mul_Folio == %@", mul_Folio)
+        
+        //3
+        do {
+            let results =
+                try managedContext.fetch(fetchRequest)
+            dbObjectMultas = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        if dbObjectMultas.count > 0
+        {
+            let multa = dbObjectMultas[0]
+            multa.setValue("ENVIADA", forKey: "mul_Estatus")
+            
+            //4
+            do {
+                try managedContext.save()
+                //5
+                dbObjectMultas.append(multa)
+                
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+                "No fue posible guardar la multa".showAlert(self)
+            }
+
+        }
+
+
+    }
     
     func saveMulta(inf_Id: Int, concepto: String, sancion: Float, mul_Id: Int, mul_Folio: String, mul_Estado: String, mul_Direccion: String,  mul_Placa: String, mul_Marca: String, mul_Color: String, par_Id: Int, mul_Espacio: Int, mul_Fecha: Date) {
         
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
+
         
         var dbObjectMulta = [NSManagedObject]()
         
@@ -1053,11 +1122,16 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         multa.setValue(mul_Espacio, forKey: "mul_Espacio")
         multa.setValue(mul_Fecha, forKey: "mul_Fecha")
         
+        multa.setValue("GUARDADA", forKey: "mul_Estatus")
+        
         //4
         do {
             try managedContext.save()
             //5
             dbObjectMulta.append(multa)
+            
+            self.btnEnviar.isEnabled = false
+            self.btnEnviar.alpha = 0.5;
             
             self.btnImprimir.isEnabled = true
             self.btnImprimir.alpha = 1.0;
@@ -1076,7 +1150,11 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
 //            self.present(alertController, animated: true, completion: nil)
 //            
 //            "La multa se guardo correctamente".showAlert(self)
-            sendMultaToWS()
+            
+            if GisInternetAvaliable.boolValue{
+                     sendMultaToWS()
+            }
+            
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
             "No fue posible guardar la multa".showAlert(self)
@@ -1086,8 +1164,11 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
     func sendMultaToWS() {
         
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
-        
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
+
         var cadena: String = AppDelegate.Host
         cadena += "?Par1=4"
         cadena += "&par2=\(txtFolio.text!)"
@@ -1123,6 +1204,7 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
 //            self.present(alert, animated: true, completion: nil)
             
             "Imposible enviar, NO hay Respuesta del servicio".showAlert(self)
+            self.updateMulta(mul_Folio: txtFolio.text!)
         
             //******CODIGO QUE FUNCIONA SI NO SE QUIERE CREAR EL SEGUE DE PRESENT MODAL
 //            let homeVC = (self.storyboard?.instantiateViewController(withIdentifier: "homeView"))! as! MenuViewController
@@ -1153,8 +1235,6 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
 //                "La multa se envio correctamente".showAlert(self)
                 // Create the alert controller
                 
-                self.btnEnviar.isEnabled = false
-                self.btnEnviar.alpha = 0.5;
                 let alertController = UIAlertController(title: "Cryxo App🍁", message: "Se generó una multa y se envio al servidor. Para continuar imprima el comprobante", preferredStyle: .alert)
                 // Create the actions
                 let okAction = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default) {
@@ -1167,6 +1247,8 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
                 alertController.addAction(okAction)
                 // Present the controller
                 self.present(alertController, animated: true, completion: nil)
+                
+                self.updateMulta(mul_Folio: txtFolio.text!)
 
                 return
             }
@@ -1176,10 +1258,12 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
     func sendFotoToWS() {
         //*************
         
-        
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
-        
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
+
 
         let url = AppDelegate.Host as String
         let request = NSMutableURLRequest(url: URL(string: url)!)
@@ -1224,7 +1308,10 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
     func sendAllFotosOfScrollToWS() {
         
         // Actualizamos la ubicacion
-        ActualizaUbicacion()
+        if GisInternetAvaliable.boolValue
+        {
+            ActualizaUbicacion()
+        }
         
         
         for index in 1...3 {
@@ -1450,8 +1537,11 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         
         var contentSizePopUp = CGSize(width: sender.frame.size.width, height: 200)
         
-        if sender.tag == 1 || sender.tag == 5 || sender.tag == 9{
+        if sender.tag == 1 || sender.tag == 9{
             contentSizePopUp = CGSize(width: 200, height: 200)
+        }
+        if sender.tag == 5{//Popover de calles
+            contentSizePopUp = CGSize(width: 300, height: 200)
         }
         if sender.tag == 3 || sender.tag == 8{
             contentSizePopUp = CGSize(width: 150, height: 200)
