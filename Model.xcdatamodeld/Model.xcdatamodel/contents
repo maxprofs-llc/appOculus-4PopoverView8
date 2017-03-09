@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CAL_Calles" representedClassName="CAL_Calles" syncable="YES" codeGenerationType="class">
+        <attribute name="calle_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="calle_Nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="COL_Colonias" representedClassName="COL_Colonias" syncable="YES" codeGenerationType="class">
+        <attribute name="colonia_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="colonia_Nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="COL_Colores" representedClassName="COL_Colores" syncable="YES" codeGenerationType="class">
+        <attribute name="color_id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="color_nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EDO_Estados" representedClassName="EDO_Estados" syncable="YES" codeGenerationType="class">
+        <attribute name="edo_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="edo_Nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FOL_Folios" representedClassName="FOL_Folios" syncable="YES" codeGenerationType="class">
+        <attribute name="fol_Fecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fol_Folio" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fol_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="usu_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="INF_Infracciones" representedClassName="INF_Infracciones" syncable="YES" codeGenerationType="class">
+        <attribute name="inf_Clave" attributeType="String" syncable="YES"/>
+        <attribute name="inf_Concepto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inf_Id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="inf_Sancion" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="MAR_Marcas" representedClassName="MAR_Marcas" syncable="YES" codeGenerationType="class">
+        <attribute name="mar_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mar_Nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MUL_Multas" representedClassName="MUL_Multas" syncable="YES" codeGenerationType="class">
+        <attribute name="inf_Id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mul_Color" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Concepto" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Direccion" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Espacio" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mul_Estado" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Fecha" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="mul_Folio" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Id" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mul_Latitud" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Longitud" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Marca" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Placa" attributeType="String" syncable="YES"/>
+        <attribute name="mul_Sancion" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="par_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="PAR_Parquimetros" representedClassName="PAR_Parquimetros" syncable="YES" codeGenerationType="class">
+        <attribute name="calle_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="colonia_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="entrecalles" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parquimetro_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="poste" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="posteanterior" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="zona" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TIV_TipoVehiculo" representedClassName="TIV_TipoVehiculo" syncable="YES" codeGenerationType="class">
+        <attribute name="tipo_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tipo_Nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="USU_Usuarios" syncable="YES">
+        <attribute name="usu_ApellidoMaterno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_ApellidoPaterno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_Clave" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_Contrasena" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_Dependencia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_Descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usu_Id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="usu_Nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CAL_Calles" positionX="394" positionY="-18" width="128" height="73"/>
+        <element name="COL_Colonias" positionX="396" positionY="63" width="128" height="73"/>
+        <element name="COL_Colores" positionX="144" positionY="135" width="128" height="75"/>
+        <element name="EDO_Estados" positionX="252" positionY="-18" width="128" height="75"/>
+        <element name="FOL_Folios" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="INF_Infracciones" positionX="99" positionY="246" width="128" height="105"/>
+        <element name="MAR_Marcas" positionX="252" positionY="198" width="128" height="73"/>
+        <element name="MUL_Multas" positionX="99" positionY="-18" width="128" height="270"/>
+        <element name="PAR_Parquimetros" positionX="250" positionY="63" width="128" height="150"/>
+        <element name="USU_Usuarios" positionX="-63" positionY="126" width="128" height="165"/>
+        <element name="TIV_TipoVehiculo" positionX="144" positionY="135" width="128" height="75"/>
+    </elements>
+</model>

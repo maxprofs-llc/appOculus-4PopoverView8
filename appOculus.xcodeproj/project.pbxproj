@@ -7,13 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		305385021E4E154E00ED39D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305385011E4E154E00ED39D0 /* CoreLocation.framework */; };
+		3075F6091E64A1760002789D /* logo_zapopan_contorno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3075F6081E64A1760002789D /* logo_zapopan_contorno.jpg */; };
+		3086B6AC1E2DC7F8003E0978 /* MultaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B6AB1E2DC7F8003E0978 /* MultaViewController.swift */; };
+		308E0D271E635FC500DE0F6E /* fondo vertical full hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 308E0D261E635FC500DE0F6E /* fondo vertical full hd.jpg */; };
+		308E0D291E63AE9800DE0F6E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 308E0D281E63AE9800DE0F6E /* icon.png */; };
+		308E0D2B1E63AEA800DE0F6E /* logo_zapopan_bn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 308E0D2A1E63AEA800DE0F6E /* logo_zapopan_bn.jpg */; };
+		3092C8FB1E400D0000F1FF27 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3092C8FA1E400D0000F1FF27 /* libsqlite3.tbd */; };
+		3B098DE01E2DB5AD00E4880A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B098DDF1E2DB5AD00E4880A /* MenuViewController.swift */; };
 		3B664FD71E2C830D00A2D5C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FD61E2C830D00A2D5C5 /* AppDelegate.swift */; };
-		3B664FD91E2C830D00A2D5C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FD81E2C830D00A2D5C5 /* ViewController.swift */; };
+		3B664FD91E2C830D00A2D5C5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FD81E2C830D00A2D5C5 /* LoginViewController.swift */; };
 		3B664FDC1E2C830D00A2D5C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B664FDA1E2C830D00A2D5C5 /* Main.storyboard */; };
 		3B664FDE1E2C830D00A2D5C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */; };
 		3B664FE11E2C830D00A2D5C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B664FDF1E2C830D00A2D5C5 /* LaunchScreen.storyboard */; };
 		3B664FEC1E2C830D00A2D5C5 /* appOculusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FEB1E2C830D00A2D5C5 /* appOculusTests.swift */; };
 		3B664FF71E2C830D00A2D5C5 /* appOculusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B664FF61E2C830D00A2D5C5 /* appOculusUITests.swift */; };
+		3B6650051E2C869C00A2D5C5 /* ExtGetJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6650041E2C869C00A2D5C5 /* ExtGetJson.swift */; };
+		3B6650071E2C86C700A2D5C5 /* ExtShowAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6650061E2C86C700A2D5C5 /* ExtShowAlert.swift */; };
+		430FEB7B1E60F96C0068896D /* TablaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430FEB7A1E60F96C0068896D /* TablaViewController.swift */; };
+		433001AD1E429DDF006F21D3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433001AB1E429DDF006F21D3 /* Model.xcdatamodeld */; };
+		433001B01E42A673006F21D3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433001AF1E42A673006F21D3 /* CoreData.framework */; };
+		4333A37D1E5BBDEB00186F35 /* ReImprimirViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4333A37C1E5BBDEB00186F35 /* ReImprimirViewController.m */; };
+		4333A3811E5D04C600186F35 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 4333A3801E5D04C600186F35 /* CustomObject.m */; };
+		439CC7BC1E4CD99100AB42F2 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7BB1E4CD99100AB42F2 /* Reachability.m */; };
+		439CC7BF1E4CDD2A00AB42F2 /* GlobalMembers.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7BE1E4CDD2A00AB42F2 /* GlobalMembers.m */; };
+		439CC7C21E4CEC3700AB42F2 /* InternetServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 439CC7C11E4CEC3700AB42F2 /* InternetServices.m */; };
+		6359C4D71E43BE0D0082EEE0 /* TomarFotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6359C4D61E43BE0D0082EEE0 /* TomarFotoViewController.m */; };
+		637743BF1E63D44D00DF8EF9 /* imagenVacia.png in Resources */ = {isa = PBXBuildFile; fileRef = 637743BE1E63D44D00DF8EF9 /* imagenVacia.png */; };
+		637743C51E64081C00DF8EF9 /* solid-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 637743C41E64081C00DF8EF9 /* solid-left.png */; };
+		637743C71E6408C700DF8EF9 /* solid-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 637743C61E6408C700DF8EF9 /* solid-right.png */; };
+		637EAAAC1E6DA389008041B8 /* CPLC_PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 637EAAAB1E6DA389008041B8 /* CPLC_PrintViewController.m */; };
+		E9572F661E4026C500493B55 /* ESCPOS_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9572F651E4026C500493B55 /* ESCPOS_ViewController.m */; };
+		E9572F6A1E40276B00493B55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9572F671E40276B00493B55 /* Default-568h@2x.png */; };
+		E9572F6C1E40276B00493B55 /* logozapopan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9572F691E40276B00493B55 /* logozapopan.jpg */; };
+		E9572F741E40280800493B55 /* logo zapopan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9572F721E40280800493B55 /* logo zapopan.jpg */; };
+		E9572F7D1E402C2B00493B55 /* libPrinter_149.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9572F7C1E402C2B00493B55 /* libPrinter_149.a */; };
+		E9572F7E1E40323000493B55 /* libPrinter_149.a in Resources */ = {isa = PBXBuildFile; fileRef = E9572F7C1E402C2B00493B55 /* libPrinter_149.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +63,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305385011E4E154E00ED39D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		305E9AE31E3C35B4002C0695 /* appOculus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appOculus-Bridging-Header.h"; sourceTree = "<group>"; };
+		3075F6081E64A1760002789D /* logo_zapopan_contorno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_zapopan_contorno.jpg; sourceTree = "<group>"; };
+		3086B6AB1E2DC7F8003E0978 /* MultaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultaViewController.swift; sourceTree = "<group>"; };
+		308E0D261E635FC500DE0F6E /* fondo vertical full hd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fondo vertical full hd.jpg"; sourceTree = "<group>"; };
+		308E0D281E63AE9800DE0F6E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		308E0D2A1E63AEA800DE0F6E /* logo_zapopan_bn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_zapopan_bn.jpg; sourceTree = "<group>"; };
+		3092C8FA1E400D0000F1FF27 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3B098DDF1E2DB5AD00E4880A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3B664FD31E2C830C00A2D5C5 /* appOculus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appOculus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B664FD61E2C830D00A2D5C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B664FD81E2C830D00A2D5C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B664FD81E2C830D00A2D5C5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B664FDB1E2C830D00A2D5C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B664FE01E2C830D00A2D5C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +85,38 @@
 		3B664FF21E2C830D00A2D5C5 /* appOculusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appOculusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B664FF61E2C830D00A2D5C5 /* appOculusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appOculusUITests.swift; sourceTree = "<group>"; };
 		3B664FF81E2C830D00A2D5C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6650041E2C869C00A2D5C5 /* ExtGetJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtGetJson.swift; sourceTree = "<group>"; };
+		3B6650061E2C86C700A2D5C5 /* ExtShowAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtShowAlert.swift; sourceTree = "<group>"; };
+		430FEB7A1E60F96C0068896D /* TablaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaViewController.swift; sourceTree = "<group>"; };
+		433001AC1E429DDF006F21D3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		433001AF1E42A673006F21D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4333A37B1E5BBDEB00186F35 /* ReImprimirViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReImprimirViewController.h; sourceTree = "<group>"; };
+		4333A37C1E5BBDEB00186F35 /* ReImprimirViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReImprimirViewController.m; sourceTree = "<group>"; };
+		4333A37F1E5D04C600186F35 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomObject.h; path = appOculus/CustomObject.h; sourceTree = "<group>"; };
+		4333A3801E5D04C600186F35 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomObject.m; path = appOculus/CustomObject.m; sourceTree = "<group>"; };
+		439CC7BA1E4CD99100AB42F2 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		439CC7BB1E4CD99100AB42F2 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		439CC7BD1E4CDD2A00AB42F2 /* GlobalMembers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalMembers.h; sourceTree = "<group>"; };
+		439CC7BE1E4CDD2A00AB42F2 /* GlobalMembers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalMembers.m; sourceTree = "<group>"; };
+		439CC7C01E4CEC3700AB42F2 /* InternetServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetServices.h; sourceTree = "<group>"; };
+		439CC7C11E4CEC3700AB42F2 /* InternetServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternetServices.m; sourceTree = "<group>"; };
+		6359C4D51E43BE0D0082EEE0 /* TomarFotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TomarFotoViewController.h; sourceTree = "<group>"; };
+		6359C4D61E43BE0D0082EEE0 /* TomarFotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TomarFotoViewController.m; sourceTree = "<group>"; };
+		637743BE1E63D44D00DF8EF9 /* imagenVacia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagenVacia.png; sourceTree = "<group>"; };
+		637743C41E64081C00DF8EF9 /* solid-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solid-left.png"; sourceTree = "<group>"; };
+		637743C61E6408C700DF8EF9 /* solid-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solid-right.png"; sourceTree = "<group>"; };
+		637EAAAA1E6DA389008041B8 /* CPLC_PrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPLC_PrintViewController.h; sourceTree = "<group>"; };
+		637EAAAB1E6DA389008041B8 /* CPLC_PrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPLC_PrintViewController.m; sourceTree = "<group>"; };
+		E9572F641E4026C500493B55 /* ESCPOS_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ESCPOS_ViewController.h; path = ../ESCPOS_ViewController.h; sourceTree = "<group>"; };
+		E9572F651E4026C500493B55 /* ESCPOS_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ESCPOS_ViewController.m; path = ../ESCPOS_ViewController.m; sourceTree = "<group>"; };
+		E9572F671E40276B00493B55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E9572F691E40276B00493B55 /* logozapopan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logozapopan.jpg; sourceTree = "<group>"; };
+		E9572F721E40280800493B55 /* logo zapopan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo zapopan.jpg"; sourceTree = "<group>"; };
+		E9572F781E402B7700493B55 /* CallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
+		E9572F791E402B7700493B55 /* CPCLPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCLPrinter.h; sourceTree = "<group>"; };
+		E9572F7A1E402B7700493B55 /* EABluetoothPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
+		E9572F7B1E402B7700493B55 /* ESCPOSPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
+		E9572F7C1E402C2B00493B55 /* libPrinter_149.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_149.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				305385021E4E154E00ED39D0 /* CoreLocation.framework in Frameworks */,
+				433001B01E42A673006F21D3 /* CoreData.framework in Frameworks */,
+				3092C8FB1E400D0000F1FF27 /* libsqlite3.tbd in Frameworks */,
+				E9572F7D1E402C2B00493B55 /* libPrinter_149.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +148,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306F71101E2D53A200A60A97 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				637743C41E64081C00DF8EF9 /* solid-left.png */,
+				3075F6081E64A1760002789D /* logo_zapopan_contorno.jpg */,
+				637743C61E6408C700DF8EF9 /* solid-right.png */,
+				308E0D261E635FC500DE0F6E /* fondo vertical full hd.jpg */,
+				E9572F721E40280800493B55 /* logo zapopan.jpg */,
+				308E0D2A1E63AEA800DE0F6E /* logo_zapopan_bn.jpg */,
+				E9572F671E40276B00493B55 /* Default-568h@2x.png */,
+				308E0D281E63AE9800DE0F6E /* icon.png */,
+				E9572F691E40276B00493B55 /* logozapopan.jpg */,
+				637743BE1E63D44D00DF8EF9 /* imagenVacia.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		3092C8F91E400D0000F1FF27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				305385011E4E154E00ED39D0 /* CoreLocation.framework */,
+				433001AF1E42A673006F21D3 /* CoreData.framework */,
+				3092C8FA1E400D0000F1FF27 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3B664FCA1E2C830C00A2D5C5 = {
 			isa = PBXGroup;
 			children = (
+				439CC7B71E4CD91D00AB42F2 /* DB */,
+				439CC7C61E4CED0300AB42F2 /* businessLogic */,
+				439CC7B91E4CD96F00AB42F2 /* utilities */,
+				306F71101E2D53A200A60A97 /* images */,
 				3B664FD51E2C830D00A2D5C5 /* appOculus */,
 				3B664FEA1E2C830D00A2D5C5 /* appOculusTests */,
 				3B664FF51E2C830D00A2D5C5 /* appOculusUITests */,
 				3B664FD41E2C830C00A2D5C5 /* Products */,
+				3092C8F91E400D0000F1FF27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +204,14 @@
 			isa = PBXGroup;
 			children = (
 				3B664FD61E2C830D00A2D5C5 /* AppDelegate.swift */,
-				3B664FD81E2C830D00A2D5C5 /* ViewController.swift */,
 				3B664FDA1E2C830D00A2D5C5 /* Main.storyboard */,
-				3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */,
 				3B664FDF1E2C830D00A2D5C5 /* LaunchScreen.storyboard */,
 				3B664FE21E2C830D00A2D5C5 /* Info.plist */,
+				439CC7B81E4CD93D00AB42F2 /* ViewControllers */,
+				3B664FDD1E2C830D00A2D5C5 /* Assets.xcassets */,
+				3B6650041E2C869C00A2D5C5 /* ExtGetJson.swift */,
+				3B6650061E2C86C700A2D5C5 /* ExtShowAlert.swift */,
+				305E9AE31E3C35B4002C0695 /* appOculus-Bridging-Header.h */,
 			);
 			path = appOculus;
 			sourceTree = "<group>";
@@ -123,6 +232,92 @@
 				3B664FF81E2C830D00A2D5C5 /* Info.plist */,
 			);
 			path = appOculusUITests;
+			sourceTree = "<group>";
+		};
+		439CC7B71E4CD91D00AB42F2 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				433001AB1E429DDF006F21D3 /* Model.xcdatamodeld */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		439CC7B81E4CD93D00AB42F2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B664FD81E2C830D00A2D5C5 /* LoginViewController.swift */,
+				3B098DDF1E2DB5AD00E4880A /* MenuViewController.swift */,
+				3086B6AB1E2DC7F8003E0978 /* MultaViewController.swift */,
+				430FEB7A1E60F96C0068896D /* TablaViewController.swift */,
+				6359C4D51E43BE0D0082EEE0 /* TomarFotoViewController.h */,
+				6359C4D61E43BE0D0082EEE0 /* TomarFotoViewController.m */,
+				E9572F641E4026C500493B55 /* ESCPOS_ViewController.h */,
+				E9572F651E4026C500493B55 /* ESCPOS_ViewController.m */,
+				4333A37B1E5BBDEB00186F35 /* ReImprimirViewController.h */,
+				4333A37C1E5BBDEB00186F35 /* ReImprimirViewController.m */,
+				637EAAAA1E6DA389008041B8 /* CPLC_PrintViewController.h */,
+				637EAAAB1E6DA389008041B8 /* CPLC_PrintViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		439CC7B91E4CD96F00AB42F2 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E9572F631E4026B000493B55 /* PrintDeviceOculus */,
+				439CC7BA1E4CD99100AB42F2 /* Reachability.h */,
+				439CC7BB1E4CD99100AB42F2 /* Reachability.m */,
+			);
+			name = utilities;
+			sourceTree = "<group>";
+		};
+		439CC7C61E4CED0300AB42F2 /* businessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				439CC7BD1E4CDD2A00AB42F2 /* GlobalMembers.h */,
+				439CC7BE1E4CDD2A00AB42F2 /* GlobalMembers.m */,
+				439CC7C01E4CEC3700AB42F2 /* InternetServices.h */,
+				439CC7C11E4CEC3700AB42F2 /* InternetServices.m */,
+				4333A37F1E5D04C600186F35 /* CustomObject.h */,
+				4333A3801E5D04C600186F35 /* CustomObject.m */,
+			);
+			name = businessLogic;
+			sourceTree = "<group>";
+		};
+		E9572F631E4026B000493B55 /* PrintDeviceOculus */ = {
+			isa = PBXGroup;
+			children = (
+				E9572F751E402B7700493B55 /* usr */,
+				E9572F7C1E402C2B00493B55 /* libPrinter_149.a */,
+			);
+			name = PrintDeviceOculus;
+			sourceTree = "<group>";
+		};
+		E9572F751E402B7700493B55 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				E9572F761E402B7700493B55 /* local */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		E9572F761E402B7700493B55 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				E9572F771E402B7700493B55 /* include */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		E9572F771E402B7700493B55 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E9572F781E402B7700493B55 /* CallbackData.h */,
+				E9572F791E402B7700493B55 /* CPCLPrinter.h */,
+				E9572F7A1E402B7700493B55 /* EABluetoothPort.h */,
+				E9572F7B1E402B7700493B55 /* ESCPOSPrinter.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,15 +388,19 @@
 				TargetAttributes = {
 					3B664FD21E2C830C00A2D5C5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ARJR3FTW8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					3B664FE61E2C830D00A2D5C5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ARJR3FTW8;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3B664FD21E2C830C00A2D5C5;
 					};
 					3B664FF11E2C830D00A2D5C5 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ARJR3FTW8;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3B664FD21E2C830C00A2D5C5;
 					};
@@ -232,9 +431,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308E0D271E635FC500DE0F6E /* fondo vertical full hd.jpg in Resources */,
+				E9572F7E1E40323000493B55 /* libPrinter_149.a in Resources */,
+				637743C71E6408C700DF8EF9 /* solid-right.png in Resources */,
+				637743C51E64081C00DF8EF9 /* solid-left.png in Resources */,
+				637743BF1E63D44D00DF8EF9 /* imagenVacia.png in Resources */,
+				E9572F6C1E40276B00493B55 /* logozapopan.jpg in Resources */,
 				3B664FE11E2C830D00A2D5C5 /* LaunchScreen.storyboard in Resources */,
 				3B664FDE1E2C830D00A2D5C5 /* Assets.xcassets in Resources */,
+				308E0D291E63AE9800DE0F6E /* icon.png in Resources */,
+				308E0D2B1E63AEA800DE0F6E /* logo_zapopan_bn.jpg in Resources */,
+				3075F6091E64A1760002789D /* logo_zapopan_contorno.jpg in Resources */,
+				E9572F6A1E40276B00493B55 /* Default-568h@2x.png in Resources */,
 				3B664FDC1E2C830D00A2D5C5 /* Main.storyboard in Resources */,
+				E9572F741E40280800493B55 /* logo zapopan.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +469,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B664FD91E2C830D00A2D5C5 /* ViewController.swift in Sources */,
+				3B098DE01E2DB5AD00E4880A /* MenuViewController.swift in Sources */,
+				E9572F661E4026C500493B55 /* ESCPOS_ViewController.m in Sources */,
+				637EAAAC1E6DA389008041B8 /* CPLC_PrintViewController.m in Sources */,
+				439CC7BC1E4CD99100AB42F2 /* Reachability.m in Sources */,
+				3B664FD91E2C830D00A2D5C5 /* LoginViewController.swift in Sources */,
+				6359C4D71E43BE0D0082EEE0 /* TomarFotoViewController.m in Sources */,
+				4333A3811E5D04C600186F35 /* CustomObject.m in Sources */,
+				439CC7BF1E4CDD2A00AB42F2 /* GlobalMembers.m in Sources */,
+				3086B6AC1E2DC7F8003E0978 /* MultaViewController.swift in Sources */,
+				433001AD1E429DDF006F21D3 /* Model.xcdatamodeld in Sources */,
 				3B664FD71E2C830D00A2D5C5 /* AppDelegate.swift in Sources */,
+				3B6650051E2C869C00A2D5C5 /* ExtGetJson.swift in Sources */,
+				3B6650071E2C86C700A2D5C5 /* ExtShowAlert.swift in Sources */,
+				439CC7C21E4CEC3700AB42F2 /* InternetServices.m in Sources */,
+				4333A37D1E5BBDEB00186F35 /* ReImprimirViewController.m in Sources */,
+				430FEB7B1E60F96C0068896D /* TablaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +563,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9ARJR3FTW8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -355,10 +580,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos10.0;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -388,6 +613,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9ARJR3FTW8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -398,9 +624,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos10.0;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -409,24 +635,47 @@
 		3B664FFC1E2C830D00A2D5C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9ARJR3FTW8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = appOculus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculus;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cryxo.com.appOculus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "appOculus/appOculus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3B664FFD1E2C830D00A2D5C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9ARJR3FTW8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = appOculus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = runsa.com.appOculus;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cryxo.com.appOculus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "appOculus/appOculus-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -503,6 +752,7 @@
 				3B664FFD1E2C830D00A2D5C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B664FFE1E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculusTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +761,7 @@
 				3B6650001E2C830D00A2D5C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B6650011E2C830D00A2D5C5 /* Build configuration list for PBXNativeTarget "appOculusUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,8 +770,22 @@
 				3B6650031E2C830D00A2D5C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		433001AB1E429DDF006F21D3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				433001AC1E429DDF006F21D3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 433001AC1E429DDF006F21D3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3B664FCB1E2C830C00A2D5C5 /* Project object */;
 }
