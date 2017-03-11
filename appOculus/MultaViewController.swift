@@ -1645,7 +1645,7 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         let managedContext = appDelegate.managedObjectContext
         
         let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "MUL_Multas")
-        fetchRequest.predicate = NSPredicate(format: "usu_Id == %d", usuario)
+        fetchRequest.predicate = NSPredicate(format: "usu_Id == %@", usuario)
         
         do {
             let results =

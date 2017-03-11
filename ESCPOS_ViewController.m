@@ -261,7 +261,8 @@ int idImpresion;
         
        
         // Proceso de impresion
-        
+//        [escp printString:@"12345678901234567890123456789012345678901234567890"];
+        [escp setDithering: THRESHOLDING_DITHERING];
         [escp printBitmap:imglogo withAlignment:ALIGNMENT_CENTER withSize:BITMAP_QUADRUPLE withBrightness:0];
      
         [escp printText:@"MUNICIPIO DE ZAPOPAN \r\n\r\n" withAlignment:ALIGNMENT_CENTER withOption:FNT_BOLD withSize:(TXT_2WIDTH|TXT_2HEIGHT)];
@@ -319,19 +320,32 @@ int idImpresion;
         
         [escp printText:@" SANCION: \r\n" withAlignment:ALIGNMENT_LEFT withOption:FNT_DEFAULT withSize:TXT_1WIDTH];
        
+        NSString *LineaSig = @"";
+        
         for (int x=0; x < fullTextArr.count; x++) {
             
             strLineToImpr = [strLineToImpr stringByAppendingString: fullTextArr[x]];
             strLineToImpr = [strLineToImpr stringByAppendingString: @" "];
-            if (x != 0 && (x % 5) == 0) {
-                
-                NSLog(@"Linea %d: %@", x, strLineToImpr);
-                [escp printString:[NSString stringWithFormat:@"   %@\n\r", strLineToImpr]];
-                strLineToImpr = @"";
+            if (x != 0 && x < fullTextArr.count-1) {
+                LineaSig = [strLineToImpr stringByAppendingString: fullTextArr[x + 1]];
+                if (LineaSig.length < 40){
+                    strLineToImpr = LineaSig;
+                    strLineToImpr = [strLineToImpr stringByAppendingString: @" "];
+                    x += 1;
+                }
+                else {
+                    if (LineaSig.length > 40){
+                        LineaSig = strLineToImpr;
+                    }
+                    NSLog(@"Linea %d: %@", x, strLineToImpr);
+                    [escp printString:[NSString stringWithFormat:@" %@\n\r", strLineToImpr]];
+                    strLineToImpr = @"";
+                    
+                }
             }
-            else if (x == fullTextArr.count-1)
-            {
-                [escp printString:[NSString stringWithFormat:@"   %@\n\r", strLineToImpr]];
+
+            if (x == fullTextArr.count-1){
+                [escp printString:[NSString stringWithFormat:@" %@\n\r", strLineToImpr]];
                 NSLog(@"Linea %d: %@", x, strLineToImpr);
             }
         }
@@ -351,7 +365,7 @@ int idImpresion;
         [escp printBarCode:barCodeData withSymbology:BCS_CODE93 withHeight:70 withWidth:BCS_3WIDTH withAlignment:ALIGNMENT_CENTER withHRI:HRI_TEXT_NONE];
         
         [escp lineFeed:4];
-        
+        [escp setDithering: ERROR_DIFFUSION_DITHERING];
         [escp printBitmap:ImagePath withAlignment:ALIGNMENT_CENTER withSize:BITMAP_NORMAL withBrightness:5];
         [escp lineFeed:4];
         
