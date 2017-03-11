@@ -212,6 +212,9 @@ int idImpresion;
     {
         unsigned char centerAlign[3] = {0x1B,0x61,0x01};
         
+        [escp setDithering: ERROR_DIFFUSION_DITHERING];
+        
+        
         // read the reference manual enclosed the compressed file.
         
         NSString * imglogo = [[NSBundle mainBundle] pathForResource:@"logo_zapopan_contorno.jpg" ofType:nil];

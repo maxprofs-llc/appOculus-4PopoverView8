@@ -49,6 +49,7 @@
         <attribute name="mul_Placa" attributeType="String" syncable="YES"/>
         <attribute name="mul_Sancion" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="par_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="usu_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="PAR_Parquimetros" representedClassName="PAR_Parquimetros" syncable="YES" codeGenerationType="class">
         <attribute name="calle_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
@@ -81,7 +82,7 @@
         <element name="FOL_Folios" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="INF_Infracciones" positionX="99" positionY="246" width="128" height="105"/>
         <element name="MAR_Marcas" positionX="252" positionY="198" width="128" height="73"/>
-        <element name="MUL_Multas" positionX="99" positionY="-18" width="128" height="285"/>
+        <element name="MUL_Multas" positionX="99" positionY="-18" width="128" height="300"/>
         <element name="PAR_Parquimetros" positionX="250" positionY="63" width="128" height="150"/>
         <element name="TIV_TipoVehiculo" positionX="144" positionY="135" width="128" height="75"/>
         <element name="USU_Usuarios" positionX="-63" positionY="126" width="128" height="165"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		305385021E4E154E00ED39D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305385011E4E154E00ED39D0 /* CoreLocation.framework */; };
+		305969CE1E737A67004D9EFD /* libPrinter_171b.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 305969CD1E737A67004D9EFD /* libPrinter_171b.a */; };
 		3075F6091E64A1760002789D /* logo_zapopan_contorno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3075F6081E64A1760002789D /* logo_zapopan_contorno.jpg */; };
 		3086B6AC1E2DC7F8003E0978 /* MultaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3086B6AB1E2DC7F8003E0978 /* MultaViewController.swift */; };
 		308E0D271E635FC500DE0F6E /* fondo vertical full hd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 308E0D261E635FC500DE0F6E /* fondo vertical full hd.jpg */; };
@@ -50,8 +51,6 @@
 		E9572F6A1E40276B00493B55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9572F671E40276B00493B55 /* Default-568h@2x.png */; };
 		E9572F6C1E40276B00493B55 /* logozapopan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9572F691E40276B00493B55 /* logozapopan.jpg */; };
 		E9572F741E40280800493B55 /* logo zapopan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9572F721E40280800493B55 /* logo zapopan.jpg */; };
-		E9572F7D1E402C2B00493B55 /* libPrinter_149.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9572F7C1E402C2B00493B55 /* libPrinter_149.a */; };
-		E9572F7E1E40323000493B55 /* libPrinter_149.a in Resources */ = {isa = PBXBuildFile; fileRef = E9572F7C1E402C2B00493B55 /* libPrinter_149.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +72,13 @@
 
 /* Begin PBXFileReference section */
 		305385011E4E154E00ED39D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		305969CD1E737A67004D9EFD /* libPrinter_171b.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_171b.a; sourceTree = "<group>"; };
+		305969CF1E737B4F004D9EFD /* CallbackData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
+		305969D01E737B4F004D9EFD /* CPCLPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPCLPrinter.h; sourceTree = "<group>"; };
+		305969D11E737B4F004D9EFD /* EABluetoothPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
+		305969D21E737B4F004D9EFD /* ESCPOSPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
+		305969D31E737B4F004D9EFD /* POSPrinterFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POSPrinterFinder.h; sourceTree = "<group>"; };
+		305969D41E737B4F004D9EFD /* ZPLPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZPLPrinter.h; sourceTree = "<group>"; };
 		305E9AE31E3C35B4002C0695 /* appOculus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "appOculus-Bridging-Header.h"; sourceTree = "<group>"; };
 		3075F6081E64A1760002789D /* logo_zapopan_contorno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo_zapopan_contorno.jpg; sourceTree = "<group>"; };
 		3086B6AB1E2DC7F8003E0978 /* MultaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultaViewController.swift; sourceTree = "<group>"; };
@@ -130,11 +136,6 @@
 		E9572F671E40276B00493B55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E9572F691E40276B00493B55 /* logozapopan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logozapopan.jpg; sourceTree = "<group>"; };
 		E9572F721E40280800493B55 /* logo zapopan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo zapopan.jpg"; sourceTree = "<group>"; };
-		E9572F781E402B7700493B55 /* CallbackData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallbackData.h; sourceTree = "<group>"; };
-		E9572F791E402B7700493B55 /* CPCLPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCLPrinter.h; sourceTree = "<group>"; };
-		E9572F7A1E402B7700493B55 /* EABluetoothPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EABluetoothPort.h; sourceTree = "<group>"; };
-		E9572F7B1E402B7700493B55 /* ESCPOSPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCPOSPrinter.h; sourceTree = "<group>"; };
-		E9572F7C1E402C2B00493B55 /* libPrinter_149.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrinter_149.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +145,8 @@
 			files = (
 				305385021E4E154E00ED39D0 /* CoreLocation.framework in Frameworks */,
 				433001B01E42A673006F21D3 /* CoreData.framework in Frameworks */,
+				305969CE1E737A67004D9EFD /* libPrinter_171b.a in Frameworks */,
 				3092C8FB1E400D0000F1FF27 /* libsqlite3.tbd in Frameworks */,
-				E9572F7D1E402C2B00493B55 /* libPrinter_149.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				E9572F751E402B7700493B55 /* usr */,
-				E9572F7C1E402C2B00493B55 /* libPrinter_149.a */,
+				305969CD1E737A67004D9EFD /* libPrinter_171b.a */,
 			);
 			name = PrintDeviceOculus;
 			sourceTree = "<group>";
@@ -347,10 +348,12 @@
 		E9572F771E402B7700493B55 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				E9572F781E402B7700493B55 /* CallbackData.h */,
-				E9572F791E402B7700493B55 /* CPCLPrinter.h */,
-				E9572F7A1E402B7700493B55 /* EABluetoothPort.h */,
-				E9572F7B1E402B7700493B55 /* ESCPOSPrinter.h */,
+				305969CF1E737B4F004D9EFD /* CallbackData.h */,
+				305969D01E737B4F004D9EFD /* CPCLPrinter.h */,
+				305969D11E737B4F004D9EFD /* EABluetoothPort.h */,
+				305969D21E737B4F004D9EFD /* ESCPOSPrinter.h */,
+				305969D31E737B4F004D9EFD /* POSPrinterFinder.h */,
+				305969D41E737B4F004D9EFD /* ZPLPrinter.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -467,7 +470,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				308E0D271E635FC500DE0F6E /* fondo vertical full hd.jpg in Resources */,
-				E9572F7E1E40323000493B55 /* libPrinter_149.a in Resources */,
 				637743C71E6408C700DF8EF9 /* solid-right.png in Resources */,
 				637743C51E64081C00DF8EF9 /* solid-left.png in Resources */,
 				637743BF1E63D44D00DF8EF9 /* imagenVacia.png in Resources */,

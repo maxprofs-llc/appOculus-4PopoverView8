@@ -6,6 +6,7 @@
 //  Copyright 2012. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
 // CPCL Status
@@ -126,27 +127,27 @@ extern NSString * const CPCL_BCS_MSI11C;
 /** Set up the barcode ratio as 3.5 : 1. */
 #define CPCL_BCS_4RATIO   4  
 /** Set up the barcode ratio as 2.0 : 1. */
-#define CPCL_BCS_20RATIO   5  
+#define CPCL_BCS_20RATIO   20
 /** Set up the barcode ratio as 2.1 : 1. */
-#define CPCL_BCS_21RATIO   6 
+#define CPCL_BCS_21RATIO   21
 /** Set up the barcode ratio as 2.2 : 1. */
-#define CPCL_BCS_22RATIO   7  
+#define CPCL_BCS_22RATIO   22
 /** Set up the barcode ratio as 2.3 : 1. */
-#define CPCL_BCS_23RATIO   8  
+#define CPCL_BCS_23RATIO   23
 /** Set up the barcode ratio as 2.4 : 1. */
-#define CPCL_BCS_24RATIO   9  
+#define CPCL_BCS_24RATIO   24
 /** Set up the barcode ratio as 2.5 : 1. */
-#define CPCL_BCS_25RATIO   10  
+#define CPCL_BCS_25RATIO   25
 /** Set up the barcode ratio as 2.6 : 1. */
-#define CPCL_BCS_26RATIO   11  
+#define CPCL_BCS_26RATIO   26
 /** Set up the barcode ratio as 2.7 : 1. */
-#define CPCL_BCS_27RATIO   12  
+#define CPCL_BCS_27RATIO   27
 /** Set up the barcode ratio as 2.8 : 1. */
-#define CPCL_BCS_28RATIO   13  
+#define CPCL_BCS_28RATIO   28
 /** Set up the barcode ratio as 2.9 : 1. */
-#define CPCL_BCS_29RATIO   14  
+#define CPCL_BCS_29RATIO   29
 /** Set up the barcode ratio as 3.0 : 1. */
-#define CPCL_BCS_30RATIO   15  
+#define CPCL_BCS_30RATIO   30  
 
 // Pattern
 /** Filled(Black/default value) */
@@ -217,48 +218,49 @@ extern NSString * const CPCL_COUNTRY_LATIN9;
 
 @property (nonatomic) NSStringEncoding encoding;
 
-- (int) openPort:(NSString*)portName withPortParam:(int) port;
-- (int) closePort;
+- (long) openPort:(NSString*)portName withPortParam:(int) port;
+- (long) closePort;
 
 // CPCL Command methods.
-- (int) setForm:(int) horizonOffset withResX:(int) resolX withResY:(int) resolY withLabelHeight:(int) labelHeight withQuantity:(int) quantity;
-- (int) printForm;
-- (int) printerCheck;
-- (int) status;
-- (int) setMeasure:(int) measure;
-- (int) setJustification:(int) justify;
+- (long) setForm:(int) horizonOffset withResX:(int) resolX withResY:(int) resolY withLabelHeight:(int) labelHeight withQuantity:(int) quantity;
+- (long) printForm;
+- (long) printerCheck;
+- (long) status;
+- (long) setMeasure:(int) measure;
+- (long) setJustification:(int) justify;
 
-- (int) printCPCLText:(int) rotation withFontType:(int) fontType withFontSize:(int) fontSize withPrintX:(int) printX withPrintY:(int) printY 
+- (long) printCPCLText:(int) rotation withFontType:(int) fontType withFontSize:(int) fontSize withPrintX:(int) printX withPrintY:(int) printY
 			 withData:(NSString *) data withCount:(int) count;
 
-- (int) setConcat:(int) contcatMode withPrintX:(int) printX withPrintY:(int) printY;
-- (int) concatText:(int) fontType withFontSize:(int) fontSize withOffset:(int) offset withData:(NSString *) data;
-- (int) resetConcat;
-- (int) setMultiLine:(int) lineHeight;
-- (int) multiLineText:(int) rotation withFontType:(int) fontType withFontSize:(int) fontSize withPrintX:(int) printX withPrintY:(int) printY;
-- (int) multiLineData:(NSString *) data;
-- (int) resetMultiLine;
-- (int) setMagnify:(int) width withHeight:(int) height;
-- (int) resetMagnify;
+- (long) setConcat:(int) contcatMode withPrintX:(int) printX withPrintY:(int) printY;
+- (long) concatText:(int) fontType withFontSize:(int) fontSize withOffset:(int) offset withData:(NSString *) data;
+- (long) resetConcat;
+- (long) setMultiLine:(int) lineHeight;
+- (long) multiLineText:(int) rotation withFontType:(int) fontType withFontSize:(int) fontSize withPrintX:(int) printX withPrintY:(int) printY;
+- (long) multiLineData:(NSString *) data;
+- (long) resetMultiLine;
+- (long) setMagnify:(int) width withHeight:(int) height;
+- (long) resetMagnify;
 
-- (int) printCPCLBarcode:(int) rotation withBarcodeType:(NSString *) barcodeType withNarrowBar:(int) NB withRatio:(int) ratio 
+- (long) printCPCLBarcode:(int) rotation withBarcodeType:(NSString *) barcodeType withNarrowBar:(int) NB withRatio:(int) ratio
 		   withBarHeight:(int) barHeight withPrintX:(int) printX withPrintY:(int) printY withData:(NSString *) data withCount:(int) count;
 
-- (int) printBox:(int) xs withYs:(int) ys withXx:(int) xx withYX:(int) yx withThickness:(int) thickness;
-- (int) printLine:(int) xs withYs:(int) ys withXx:(int) xx withYx:(int) yx withThickness:(int) thickness;
-- (int) inverseLine:(int) xs withYs:(int) ys withXx:(int) xx withYx:(int) yx withThickness:(int) thickness;
-- (int) setPattern:(int) patternNum;
-- (int) printBitmap:(NSString *) filePath withPrintX:(int) printX withPrintY:(int) printY withBrightness:(int) bright;
-- (int) setContrast:(int) darkness;
-- (int) setPageWidth:(int) pageWidth;
-- (int) printCPCLImage:(NSString *) imageName withPrintX:(int) printX withPrintY:(int) printY;
-- (int) setSpeed:(int) speed;
-- (int) setTone:(int) tone;
-- (int) setCPCLBarcode:(int) fontNum withFontSize:(int) fontSize withOffset:(int) offset;
+- (long) printBox:(int) xs withYs:(int) ys withXx:(int) xx withYX:(int) yx withThickness:(int) thickness;
+- (long) printLine:(int) xs withYs:(int) ys withXx:(int) xx withYx:(int) yx withThickness:(int) thickness;
+- (long) inverseLine:(int) xs withYs:(int) ys withXx:(int) xx withYx:(int) yx withThickness:(int) thickness;
+- (long) setPattern:(int) patternNum;
+- (long) printBitmap:(NSString *) filePath withPrintX:(int) printX withPrintY:(int) printY withBrightness:(int) bright;
+- (long) setContrast:(int) darkness;
+- (long) setPageWidth:(int) pageWidth;
+- (long) printCPCLImage:(NSString *) imageName withPrintX:(int) printX withPrintY:(int) printY;
+- (long) setSpeed:(int) speed;
+- (long) setTone:(int) tone;
+- (long) setCPCLBarcode:(int) fontNum withFontSize:(int) fontSize withOffset:(int) offset;
+- (long) resetCPCLBarcode; // Added in 1.61
 
-- (int) setMedia:(int) mode;
-- (int) setCountry:(NSString *) country;
-- (int) resetCountry;
+- (long) setMedia:(int) mode;
+- (long) setCountry:(NSString *) country;
+- (long) resetCountry;
 
 // 2D Barcode
 - (void) printPDF417:(int) rotation withPrintX:(int) printX withPrintY:(int) printY withUnitWidth:(int) unitWidth withUnitHeight:(int) unitHeight 
@@ -273,4 +275,16 @@ extern NSString * const CPCL_COUNTRY_LATIN9;
 - (void) printGS1:(int) rotation withType:(NSString *) type withModuleWidth:(int) moduleWidth withHeight:(int) height withPrintX:(int) printX withPrintY:(int) printY 
 		 withData:(NSString *) data;
 
+// Added in 1.71 for web printing
+- (long) printImage:(UIImage *) imgApp withPrintX:(int) printX withPrintY:(int) printY withBrightness:(int) bright;
+- (long) printNormalWeb:(NSString *) normalData;
+//////////////////////////////////
+
+// Added in 1.71 for iOS font.
+- (long) printIOSFont:(int) rotation withPrintX:(int) printX withPrintY:(int) printY withFontName:(NSString *)fontName withBold:(int)bold withItalic:(int)italic withUnderline:(int)underline withData:(NSString *)data withMaxWidth:(int)maxWidth withFontSize:(int)fontdotsize withReverse:(int)reverse;
+
+// bluetooth only.
+- (long) searchPrinter:(NSString*)portName withPortParam:(int) port;
+- (long) closePortReset;
+- (long) printData:(unsigned char *)data withLength:(int) length;
 @end

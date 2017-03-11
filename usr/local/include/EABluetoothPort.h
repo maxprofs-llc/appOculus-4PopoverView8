@@ -20,6 +20,7 @@ extern NSString * EADSessionDataReceivedNotification;
     NSMutableData *_wData;
     NSMutableData *_rData;
 }
+@property (readwrite) int change;
 
 // GetInstance
 + (EABluetoothPort *)sharedController;
@@ -31,8 +32,10 @@ extern NSString * EADSessionDataReceivedNotification;
 - (void)closeSession;
 // Add function
 - (void)closeSessionWait;
+- (void)closeSessionReset; // bluetooth module reset command.
 
-- (int) readBytesAvailable;
+//- (int) readBytesAvailable;
+- (long) readBytesAvailable;
 - (NSData *) readData:(NSUInteger)bytesToRead;
 
 - (void) writeData:(unsigned char *)data charsToSend:(int)length;

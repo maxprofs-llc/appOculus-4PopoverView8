@@ -1121,6 +1121,7 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         multa.setValue(par_Id, forKey: "par_Id")
         multa.setValue(mul_Espacio, forKey: "mul_Espacio")
         multa.setValue(mul_Fecha, forKey: "mul_Fecha")
+        multa.setValue(usuario, forKey: "usu_Id")
         
         multa.setValue("GUARDADA", forKey: "mul_Estatus")
         
@@ -1644,6 +1645,7 @@ class MultaViewController: UIViewController, CLLocationManagerDelegate, UIPicker
         let managedContext = appDelegate.managedObjectContext
         
         let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "MUL_Multas")
+        fetchRequest.predicate = NSPredicate(format: "usu_Id == %d", usuario)
         
         do {
             let results =

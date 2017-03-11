@@ -2,11 +2,15 @@
 //  ESCPOSPrinter.h
 //  iOS
 //
-//  Created by leesk on 11. 11. 23..
+//  Modified by sooh on 2016. 12. 12..
 //  Copyright 2011. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
+//#define ENABLE_POS
+#define ENABLE_MSR
 
 // Alignment
 #define ALIGNMENT_LEFT				0
@@ -83,14 +87,15 @@
 #define DIRECTION_TOP_BOTTOM		3
 
 
-//======== POSPrinter Only ============//
+// POSPrinter Only.
+#ifdef ENABLE_POS
 // Cashdrawer status
 #define STS_CD_OPEN					0
 #define STS_CD_CLOSE				1
 // Cashdrawer pin
 #define CD_PIN_TWO					0
 #define CD_PIN_FIVE					1
-//=====================================//
+#endif
 
 // Printer Status
 #define STS_PRINTEROFF				128
@@ -108,54 +113,74 @@
 #define MSR_TRACK_3					52
 #define MSR_TRACK_23				54
 
+// Dithering type
+#define THRESHOLDING_DITHERING		0
+#define ERROR_DIFFUSION_DITHERING 	1
+#define ORDERED_2x2_DITHERING       2
+#define ORDERED_4x4_DITHERING       3
+#define ORDERED_8x8_DITHERING       4
+#define ORDERED_12x12_DITHERING     5
+
+
 @interface ESCPOSPrinter : NSObject 
 {
 	BOOL asbMode;
 	BOOL msrDataMode;
 	NSStringEncoding encoding;
+    int ditherType;
 }
 @property (nonatomic) BOOL asbMode;
 @property (nonatomic) BOOL msrDataMode;
 @property (nonatomic) NSStringEncoding encoding;
+@property (nonatomic) int ditherType;
 
 
-- (int) openPort:(NSString*)portName withPortParam:(int) port;
-- (int) closePort;
+- (long) openPort:(NSString*)portName withPortParam:(int) port;
+- (long) closePort;
 
-- (int) printText:(NSString *) data withAlignment:(int) align withOption:(int) option withSize:(int) size;
-- (int) printString:(NSString*) data;
-- (int) printData:(unsigned char *) data withLength:(int) length;
-- (int) printNVBitmap:(int) imageNumber withAlignment:(int) align withSize:(int) size;
-- (int) printBitmap:(NSString *) filePath withAlignment:(int) align withSize:(int) size withBrightness:(int) bright;
-- (int) printBarCode:(NSString*) data withSymbology:(int) symbol withHeight:(int) height withWidth:(int) width withAlignment:(int) align withHRI:(int) textPos;
-- (int) printPDF417:(NSString *) data withLength:(int) dataLength withColumns:(int) columns withCellWidth:(int) cWidth withAlignment:(int) align;
-- (int) printQRCode:(NSString*) data withLength:(int) dataLength withModuleSize:(int) moduleSize withECLevel:(int) ECLevel withAlignment:(int) align;
+- (long) printText:(NSString *) data withAlignment:(int) align withOption:(int) option withSize:(int) size;
+- (long) printString:(NSString*) data;
+- (long) printData:(unsigned char *) data withLength:(int) length;
+- (long) printNVBitmap:(int) imageNumber withAlignment:(int) align withSize:(int) size;
+- (long) printBitmap:(NSString *) filePath withAlignment:(int) align withSize:(int) size withBrightness:(int) bright;
+- (long) printBarCode:(NSString*) data withSymbology:(int) symbol withHeight:(int) height withWidth:(int) width withAlignment:(int) align withHRI:(int) textPos;
+- (long) printPDF417:(NSString *) data withLength:(int) dataLength withColumns:(int) columns withCellWidth:(int) cWidth withAlignment:(int) align;
+- (long) printQRCode:(NSString*) data withLength:(int) dataLength withModuleSize:(int) moduleSize withECLevel:(int) ECLevel withAlignment:(int) align;
 
-- (int) asbOn;
-- (int) asbOff;
+- (long) asbOn;
+- (long) asbOff;
 - (void) registerCallback:(id) object withSelctor:(SEL) selector;
 - (void) unregisterCallback;
 
-- (int) printPageModeData;
-- (int) clearPageModeData;
-- (int) setPageMode:(BOOL) pagemode;
-- (int) setPrintDirection:(int) direction;
-- (int) setPrintingArea:(int) startX withStartY:(int) startY withWidth:(int) width withHeight:(int) height;
-- (int) setMotionUnit:(int) hUnit withVUnit:(int) vUnit;
-- (int) setAbsoluteVertical:(int) absolutePosition;
-- (int) setRelativeVertical:(int) relativePosition;
-- (int) lineFeed:(int) lfConunt;
+- (long) printPageModeData;
+- (long) clearPageModeData;
+- (long) setPageMode:(BOOL) pagemode;
+- (long) setPrintDirection:(int) direction;
+- (long) setPrintingArea:(int) startX withStartY:(int) startY withWidth:(int) width withHeight:(int) height;
+- (long) setMotionUnit:(int) hUnit withVUnit:(int) vUnit;
+- (long) setAbsoluteVertical:(int) absolutePosition;
+- (long) setRelativeVertical:(int) relativePosition;
+- (long) lineFeed:(int) lfConunt;
 
 // MSR function.
-- (int) readMSR:(int) mode;
-- (int) cancelMSR;
+- (long) readMSR:(int) mode;
+- (long) cancelMSR;
 
-// POSPrinter Only
-- (int) cutPaper;
-- (int) printerSts;
-- (int) drawerSts;
-- (int) openDrawer:(int) pinNum withPulseOnTime:(int) onTime withPulseOffTime:(int) offTime;
-// MobilePrinter Only
-- (int) printerCheck;
+- (long) printerCheck;
+
+// Added in 1.71 for web printing
+- (long) printImage:(UIImage *) imgApp withAlignment:(int) align withSize:(int) size withBrightness:(int) bright;
+- (long) printNormalWeb:(NSString *) normalData;
+//////////////////////////////////
+
+// Added in 1.71 for font
+- (long) printIOSFont:(NSString *)fontName withBold:(int)bold withItalic:(int)italic withUnderline:(int)underline
+             withData:(NSString *)data withMaxWidth:(int)maxWidth withFontSize:(int)fontdotsize withAlgin:(int)alignment withReverse:(int)reverse;
+// Added in 1.71 for dithering
+- (long) setDithering:(int) iDither;
+
+// bluetooth only.
+- (long) searchPrinter:(NSString*)portName withPortParam:(int) port;
+- (long) closePortReset;
 
 @end
